@@ -81,26 +81,27 @@ Select component to select value from options.
 
 ### Select Methods
 
-| Name | Description | Version |
-| --- | --- | --- |
-| blur() | Remove focus |  |
-| focus() | Get focus |  |
+| Name    | Description  | Version |
+| ------- | ------------ | ------- |
+| blur()  | Remove focus |         |
+| focus() | Get focus    |         |
 
-### Option props
+### Select.Option props
 
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| className | The additional class to option | string | - |  |
-| disabled | Disable this option | boolean | false |  |
-| title | `title` of Select after select this Option | string | - |  |
-| value | Default to filter with this property | string \| number | - |  |
+| Property  | Description                                | Type             | Default | Version |
+| --------- | ------------------------------------------ | ---------------- | ------- | ------- |
+| className | The additional class to option             | string           | -       |         |
+| disabled  | Disable this option                        | boolean          | false   |         |
+| title     | `title` of Select after select this Option | string           | -       |         |
+| value     | Default to filter with this property       | string \| number | -       |         |
+| label    | Group label | string \| React.Element | -       |         |
 
-### OptGroup props
+### Select.OptGroup props
 
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| key | Group key | string | - |  |
-| label | Group label | string \| React.Element | - |  |
+| Property | Description | Type                    | Default | Version |
+| -------- | ----------- | ----------------------- | ------- | ------- |
+| key      | Group key   | string                  | -       |         |
+| label    | Group label | string \| React.Element | -       |         |
 
 ## FAQ
 

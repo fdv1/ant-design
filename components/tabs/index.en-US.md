@@ -28,7 +28,7 @@ Ant Design has 3 types of Tabs for different situations.
 | centered | Centers tabs | boolean | false | 4.4.0 |
 | defaultActiveKey | Initial active TabPane's key, if `activeKey` is not set | string | - |  |
 | hideAdd | Hide plus icon or not. Only works while `type="editable-card"` | boolean | false |  |
-| moreIcon | The custom icon of ellipsis | ReactNode | &lt;EllipsisOutlined /> | 4.14.0  |
+| keyboard | Whether to turn on keyboard navigation | boolean | true |  |
 | renderTabBar | Replace the TabBar | (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) => React.ReactElement | - |  |
 | size | Preset tab bar size | `large` \| `default` \| `small` | `default` |  |
 | tabBarExtraContent | Extra content in tab bar | ReactNode \| {left?: ReactNode, right?: ReactNode} | - | object: 4.6.0 |
@@ -51,5 +51,8 @@ More option at [rc-tabs option](https://github.com/react-component/tabs#tabs)
 | forceRender | Forced render of content in tabs, not lazy render after clicking on tabs | boolean | false |
 | key | TabPane's key | string | - |
 | tab | Show text in TabPane's head | ReactNode | - |
+| closable | Whether the tab can be closed | boolean | false |
+| disabled | Whether the tab can be selected | boolean | false |
+
 
 More option at [rc-tabs option](https://github.com/react-component/tabs#tabpane)

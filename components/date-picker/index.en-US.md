@@ -46,9 +46,14 @@ import locale from 'antd/lib/locale/zh_CN';
 </ConfigProvider>;
 ```
 
-### Common API
+### Common Methods
 
-The following APIs are shared by DatePicker, RangePicker.
+| Name    | Description  | Version |
+| ------- | ------------ | ------- |
+| blur()  | Remove focus |         |
+| focus() | Get focus    |         |
+
+### DatePicker
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -69,23 +74,11 @@ The following APIs are shared by DatePicker, RangePicker.
 | picker | Set picker type | `date` \| `week` \| `month` \| `quarter` \| `year` | `date` | `quarter`: 4.1.0 |
 | placeholder | The placeholder of date input | string \| \[string,string] | - |  |
 | popupStyle | To customize the style of the popup calendar | CSSProperties | {} |  |
-| size | To determine the size of the input box, the height of `large` and `small`, are 40px and 24px respectively, while default size is 32px | `large` \| `middle` \| `small` | - |  |
+| size | The determine the size of the input box, the height of `large` and `small`, are 40px and 24px respectively, while default size is 32px | `large` \| `middle` \| `small` | - |  |
 | style | To customize the style of the input box | CSSProperties | {} |  |
 | suffixIcon | The custom suffix icon | ReactNode | - |  |
 | onOpenChange | Callback function, can be executed whether the popup calendar is popped up or closed | function(open) | - |  |
 | onPanelChange | Callback when picker panel mode is changed | function(value, mode) | - |  |
-
-### Common Methods
-
-| Name | Description | Version |
-| --- | --- | --- |
-| blur() | Remove focus |  |
-| focus() | Get focus |  |
-
-### DatePicker
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
 | defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
 | defaultValue | To set default date, if start time or end time is null or undefined, the date range will be an open interval | [moment](http://momentjs.com/) | - |  |
 | disabledTime | To specify the time that cannot be selected | function(date) | - |  |
@@ -99,9 +92,6 @@ The following APIs are shared by DatePicker, RangePicker.
 | onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
 | onOk | Callback when click ok button | function() | - |  |
 | onPanelChange | Callback function for panel changing | function(value, mode) | - |  |
-
-### DatePicker\[picker=year]
-
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
@@ -111,46 +101,33 @@ The following APIs are shared by DatePicker, RangePicker.
 | value | To set date | [moment](http://momentjs.com/) | - |  |
 | onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
 
-### DatePicker\[picker=quarter]
-
-Added in `4.1.0`.
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
-| defaultValue | To set default date | [moment](http://momentjs.com/) | - |  |
-| format | To set the date format, refer to [moment.js](http://momentjs.com/) | string | `YYYY-\QQ` |  |
-| renderExtraFooter | Render extra footer in panel | () => React.ReactNode | - |  |
-| value | To set date | [moment](http://momentjs.com/) | - |  |
-| onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
-
-### DatePicker\[picker=month]
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
-| defaultValue | To set default date | [moment](http://momentjs.com/) | - |  |
-| format | To set the date format, refer to [moment.js](http://momentjs.com/) | string | `YYYY-MM` |  |
-| monthCellRender | Custom month cell content render method | function(date, locale): ReactNode | - |  |
-| renderExtraFooter | Render extra footer in panel | () => React.ReactNode | - |  |
-| value | To set date | [moment](http://momentjs.com/) | - |  |
-| onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
-
-### DatePicker\[picker=week]
-
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
-| defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
-| defaultValue | To set default date | [moment](http://momentjs.com/) | - |  |
-| format | To set the date format, refer to [moment.js](http://momentjs.com/) | string | `YYYY-wo` |  |
-| renderExtraFooter | Render extra footer in panel | (mode) => React.ReactNode | - |  |
-| value | To set date | [moment](http://momentjs.com/) | - |  |
-| onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
 
 ### RangePicker
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
+| allowClear | Whether to show clear button | boolean | true |  |
+| autoFocus | If get focus when component mounted | boolean | false |  |
+| bordered | Whether has border style | boolean | true |  |
+| className | The picker className | string | - |  |
+| dateRender | Custom rendering function for date cells | function(currentDate: moment, today: moment) => React.ReactNode | - |  |
+| disabled | Determine whether the DatePicker is disabled | boolean | false |  |
+| disabledDate | Specify the date that cannot be selected | (currentDate: moment) => boolean | - |  |
+| dropdownClassName | To customize the className of the popup calendar | string | - |  |
+| getPopupContainer | To set the container of the floating layer, while the default is to create a `div` element in `body` | function(trigger) | - |  |
+| inputReadOnly | Set the `readonly` attribute of the input tag (avoids virtual keyboard on touch devices) | boolean | false |  |
+| locale | Localization configuration | object | [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |  |
+| mode | The picker panel mode（ [Cannot select year or month anymore?](/docs/react/faq#When-set-mode-to-DatePicker/RangePicker,-cannot-select-year-or-month-anymore?) ) | `time` \| `date` \| `month` \| `year` \| `decade` | - |  |
+| open | The open state of picker | boolean | - |  |
+| panelRender | Customize panel render | (panelNode) => ReactNode | - | 4.5.0 |
+| picker | Set picker type | `date` \| `week` \| `month` \| `quarter` \| `year` | `date` | `quarter`: 4.1.0 |
+| placeholder | The placeholder of date input | string \| \[string,string] | - |  |
+| popupStyle | To customize the style of the popup calendar | CSSProperties | {} |  |
+| size | The determine the size of the input box, the height of `large` and `small`, are 40px and 24px respectively, while default size is 32px | `large` \| `middle` \| `small` | - |  |
+| style | To customize the style of the input box | CSSProperties | {} |  |
+| suffixIcon | The custom suffix icon | ReactNode | - |  |
+| onOpenChange | Callback function, can be executed whether the popup calendar is popped up or closed | function(open) | - |  |
+| onPanelChange | Callback when picker panel mode is changed | function(value, mode) | - |  |
 | allowEmpty | Allow start or end input leave empty | \[boolean, boolean] | \[false, false] |  |
 | dateRender | Customize date cell. `info` argument is added in 4.3.0 | function(currentDate: moment, today: moment, info: { range: `start` \| `end` }) => React.ReactNode | - |  |
 | defaultPickerValue | To set default picker date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
@@ -165,29 +142,9 @@ Added in `4.1.0`.
 | showTime.defaultValue | To set default time of selected date, [demo](#components-date-picker-demo-disabled-date) | [moment](http://momentjs.com/)\[] | \[moment(), moment()] |  |
 | value | To set date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
 | onCalendarChange | Callback function, can be executed when the start time or the end time of the range is changing. `info` argument is added in 4.4.0 | function(dates: \[moment, moment], dateStrings: \[string, string], info: { range:`start`\|`end` }) | - |  |
+| onOk | Callback when click ok button | function() | - |  |
 | onChange | Callback function, can be executed when the selected time is changing | function(dates: \[moment, moment], dateStrings: \[string, string]) | - |  |
 
-## FAQ
-
-### When set mode to DatePicker/RangePicker, cannot select year or month anymore?
-
-Please refer [FAQ](/docs/react/faq#When-set-mode-to-DatePicker/RangePicker,-cannot-select-year-or-month-anymore?)
-
-### How to use DatePicker with customize date library like dayjs?
-
-Please refer [replace moment](/docs/react/replace-moment#DatePicker)
-
-### Why config moment.locale globally not work?
-
-DatePicker default set `locale` as `en` in v4. You can config DatePicker `locale` prop or [ConfigProvider `locale`](/components/config-provider) prop instead.
-
-### How to modify start day of week?
-
-Please use correct [language](/docs/react/i18n) ([#5605](https://github.com/ant-design/ant-design/issues/5605)), or update moment `locale` config: <https://codesandbox.io/s/moment-day-of-week-6dby5>
-
-### Why origin panel don't switch when using `panelRender`?
-
-When you change the layout of nodes by `panelRender`, React will unmount and re-mount it which reset the component state. You should keep the layout stable. Please ref [#27263](https://github.com/ant-design/ant-design/issues/27263) for more info.
 
 ```js
 moment.locale('en', {

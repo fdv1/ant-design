@@ -33,6 +33,7 @@ A basic widget for getting the user input is a text field. Keyboard and mouse ca
 | value | The input content value | string | - |  |
 | onChange | Callback when user input | function(e) | - |  |
 | onPressEnter | The callback function that is triggered when Enter key is pressed | function(e) | - |  |
+| placeholder | Place holder value | - |  |
 
 > When `Input` is used in a `Form.Item` context, if the `Form.Item` has the `id` and `options` props defined then `value`, `defaultValue`, and `id` props of `Input` are automatically set.
 
@@ -51,20 +52,25 @@ The rest of the props of Input are exactly the same as the original [input](http
 | value | The input content value | string | - |  |
 | onPressEnter | The callback function that is triggered when Enter key is pressed | function(e) | - |  |
 | onResize | The callback function that is triggered when resize | function({ width, height }) | - |  |
+| rows | Number of rows to display | - |  |
+| cols | Number of columns to display | - |  |
+| placeholder | Place holder value | - |  |
 
 The rest of the props of `Input.TextArea` are the same as the original [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea).
 
-#### Input.Search
+### Input.Search
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
 | enterButton | Whether to show an enter button after input. This property conflicts with the `addonAfter` property | boolean \| ReactNode | false |
 | loading | Search box with loading | boolean | false |
 | onSearch | The callback function triggered when you click on the search-icon, the clear-icon or press the Enter key | function(value, event) | - |
+| placeholder | Place holder value | - |  |
+| defaultValue | The initial input content | string | - |  |
+| size | Set the size | `large` \| `middle` \| `small` | `middle` |  |
+| allowClear | Allow clearing text search | boolean | true |  |
 
-Supports all props of `Input`.
-
-#### Input.Group
+### Input.Group
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -78,7 +84,7 @@ Supports all props of `Input`.
 </Input.Group>
 ```
 
-#### Input.Password
+### Input.Password
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -103,7 +109,3 @@ const suffix = condition ? <Icon type="smile" /> : <span />;
 
 <Input suffix={suffix} />;
 ```
-
-### Why TextArea in control can make `value` exceed `maxLength`?
-
-When in control, component should show as what it set to avoid submit value not align with store value in Form.

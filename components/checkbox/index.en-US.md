@@ -14,9 +14,8 @@ Checkbox component.
 
 ## API
 
-### Props
 
-#### Checkbox
+### Checkbox
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -27,7 +26,7 @@ Checkbox component.
 | indeterminate | The indeterminate checked state of checkbox | boolean | false |  |
 | onChange | The callback function that is triggered when the state changes | function(e:Event) | - |  |
 
-#### Checkbox Group
+### Checkbox.Group
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -37,12 +36,3 @@ Checkbox component.
 | options | Specifies options | string\[] \| Option\[] | \[] |  |
 | value | Used for setting the currently selected value | string\[] | \[] |  |
 | onChange | The callback function that is triggered when the state changes | function(checkedValue) | - |  |
-
-### Methods
-
-#### Checkbox
-
-| Name | Description | Version |
-| --- | --- | --- |
-| blur() | Remove focus |  |
-| focus() | Get focus |  |

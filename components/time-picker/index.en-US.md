@@ -15,13 +15,6 @@ By clicking the input box, you can select a time from a popup panel.
 
 ## API
 
----
-
-```jsx
-import moment from 'moment';
-
-<TimePicker defaultValue={moment('13:30:56', 'HH:mm:ss')} />;
-```
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -55,21 +48,31 @@ import moment from 'moment';
 | onChange | A callback function, can be executed when the selected time is changing | function(time: moment, timeString: string): void | - |  |
 | onOpenChange | A callback function which will be called while panel opening/closing | (open: boolean) => void | - |  |
 | onSelect | A callback function, executes when a value is selected | function(time: moment): void | - |  |
+|size | Display size | - |  |
+| bordered | Display border | - |  |
 
-## Methods
-
-| Name | Description | Version |
-| --- | --- | --- |
-| blur() | Remove focus |  |
-| focus() | Get focus |  |
 
 ### RangePicker
 
-Same props from [RangePicker](/components/date-picker/#RangePicker) of DatePicker. And includes additional props:
-
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
-| order | Order start and end time | boolean | true | 4.1.0 |
+| allowEmpty | Allow start or end input leave empty | \[boolean, boolean] | \[false, false] |  |
+| dateRender | Customize date cell. `info` argument is added in 4.3.0 | function(currentDate: moment, today: moment, info: { range: `start` \| `end` }) => React.ReactNode | - |  |
+| defaultPickerValue | To set default picker date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
+| defaultValue | To set default date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
+| disabled | If disable start or end | \[boolean, boolean] | - |  |
+| disabledTime | To specify the time that cannot be selected | function(date: moment, partial: `start` \| `end`) | - |  |
+| format | To set the date format, refer to [moment.js](http://momentjs.com/). When an array is provided, all values are used for parsing and first value is used for formatting | string \| string\[] | `YYYY-MM-DD HH:mm:ss` |  |
+| ranges | The preseted ranges for quick selection | { \[range: string]: [moment](http://momentjs.com/)\[] } \| { \[range: string]: () => [moment](http://momentjs.com/)\[] } | - |  |
+| renderExtraFooter | Render extra footer in panel | () => React.ReactNode | - |  |
+| separator | Set separator between inputs | string | `~` |  |
+| showTime | To provide an additional time selection | object \| boolean | [TimePicker Options](/components/time-picker/#API) |  |
+| showTime.defaultValue | To set default time of selected date, [demo](#components-date-picker-demo-disabled-date) | [moment](http://momentjs.com/)\[] | \[moment(), moment()] |  |
+| value | To set date | \[[moment](http://momentjs.com/), [moment](http://momentjs.com/)] | - |  |
+| onCalendarChange | Callback function, can be executed when the start time or the end time of the range is changing. `info` argument is added in 4.4.0 | function(dates: \[moment, moment], dateStrings: \[string, string], info: { range:`start`\|`end` }) | - |  |
+| onChange | Callback function, can be executed when the selected time is changing | function(dates: \[moment, moment], dateStrings: \[string, string]) | - |  |
+| size | Display size | - |  |
+| bordered | Display border | - |  |
 
 <style>
 .code-box-demo .ant-picker { margin: 0 8px 12px 0; }

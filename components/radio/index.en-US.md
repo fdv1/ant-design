@@ -24,7 +24,7 @@ Radio.
 | disabled | Disable radio | boolean | false |
 | value | According to value for comparison, to determine whether the selected | any | - |
 
-### RadioGroup
+### Radio.Group
 
 Radio group can wrap a group of `Radio`。
 
@@ -44,7 +44,7 @@ Radio group can wrap a group of `Radio`。
 
 ### Radio
 
-| Name | Description |
-| --- | --- |
-| blur() | Remove focus |
-| focus() | Get focus |
+| Name    | Description  |
+| ------- | ------------ |
+| blur()  | Remove focus |
+| focus() | Get focus    |

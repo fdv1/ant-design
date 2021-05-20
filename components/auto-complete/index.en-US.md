@@ -19,8 +19,7 @@ When there is a need for autocomplete functionality.
 | allowClear | Show clear button | boolean | false |  |
 | autoFocus | If get focus when component mounted | boolean | false |  |
 | backfill | If backfill selected item the input when using keyboard | boolean | false |  |
-| children (for customize input element) | Customize input element | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement&lt;InputProps> | &lt;Input /> |  |
-| children (for dataSource) | Data source to auto complete | React.ReactElement&lt;OptionProps> \| Array&lt;React.ReactElement&lt;OptionProps>> | - |  |
+| children | Customize input element | HTMLInputElement \| HTMLTextAreaElement \| React.ReactElement&lt;InputProps> | &lt;Input /> |  |
 | defaultActiveFirstOption | Whether active first option by default | boolean | true |  |
 | defaultOpen | Initial open state of dropdown | boolean | - |  |
 | defaultValue | Initial selected option | string | - |  |
@@ -39,13 +38,16 @@ When there is a need for autocomplete functionality.
 | onFocus | Called when entering the component | function() | - |  |
 | onSearch | Called when searching items | function(value) | - |  |
 | onSelect | Called when a option is selected. param is option's value and option instance | function(value, option) | - |  |
+|compact | Compact display | - |  |
+| placeholder | Place holder value | - |  |
+
 
 ## Methods
 
-| Name | Description | Version |
-| --- | --- | --- |
-| blur() | Remove focus |  |
-| focus() | Get focus |  |
+| Name    | Description  | Version |
+| ------- | ------------ | ------- |
+| blur()  | Remove focus |         |
+| focus() | Get focus    |         |
 
 ## FAQ
 

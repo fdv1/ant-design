@@ -27,6 +27,9 @@ The difference with the `confirm` modal dialog is that it's more lightweight tha
 | title | The title of the confirmation box | ReactNode \| () => ReactNode | - |
 | onCancel | A callback of cancel | function(e) | - |
 | onConfirm | A callback of confirmation | function(e) | - |
+| placement | The position of the tooltip relative to the target, which can be one of `top` `left` `right` `bottom` `topLeft` `topRight` `bottomLeft` `bottomRight` `leftTop` `leftBottom` `rightTop` `rightBottom` | string | `top` |  |
+| visible | Whether the floating tooltip card is visible or not | boolean | false |  |
+| onVisibleChange | Callback executed when visibility of the tooltip card is changed | (visible) => void | - |  |
 
 Consult [Tooltip's documentation](/components/tooltip/#API) to find more APIs.
 

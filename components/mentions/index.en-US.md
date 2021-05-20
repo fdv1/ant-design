@@ -19,7 +19,7 @@ When need to mention someone or something.
 </Mentions>
 ```
 
-### Mention
+### Mentions
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -40,13 +40,15 @@ When need to mention someone or something.
 | onResize | The callback function that is triggered when textarea resize | function({ width, height }) | - |
 | onSearch | Trigger when prefix hit | (text: string, prefix: string) => void | - |
 | onSelect | Trigger when user select the option | (option: OptionProps, prefix: string) => void | - |
+| rows | Number of rows to display | - |  |
+| cols | Number of columns to display | - |  |
 
 ### Mention methods
 
-| Name | Description |
-| --- | --- |
-| blur() | Remove focus |
-| focus() | Get focus |
+| Name    | Description  |
+| ------- | ------------ |
+| blur()  | Remove focus |
+| focus() | Get focus    |
 
 ### Option
 

@@ -82,6 +82,30 @@ The wrapper.
 
 > APIs of `Layout.Header` `Layout.Footer` `Layout.Content` are the same as that of `Layout`.
 
+### Layout.Header
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| className | Container className | string | - |
+| hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
+| style | To customize the styles | CSSProperties | - |
+
+### Layout.Footer
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| className | Container className | string | - |
+| hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
+| style | To customize the styles | CSSProperties | - |
+
+### Layout.Content
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| className | Container className | string | - |
+| hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
+| style | To customize the styles | CSSProperties | - |
+
 ### Layout.Sider
 
 The sidebar.

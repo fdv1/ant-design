@@ -10,55 +10,6 @@ cover: https://gw.alipayobjects.com/zos/alicdn/5rWLU27so/Grid.svg
 
 ## Design concept
 
-<div class="grid-demo">
-<div class="ant-row demo-row">
-  <div class="ant-col-24 demo-col demo-col-1">
-    100%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
-  </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
-  </div>
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
-  </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-12 demo-col demo-col-1">
-    50%
-  </div>
-  <div class="ant-col-12 demo-col demo-col-3">
-    50%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-16 demo-col demo-col-4">
-    66.66%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-</div>
-</div>
-
 In most business situations, Ant Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.
 
 We name the divided area 'box'. We suggest four boxes for horizontal arrangement at most, one at least. Boxes are proportional to the entire screen as shown in the picture above. To ensure a high level of visual comfort, we customize the typography inside of the box based on the box unit.

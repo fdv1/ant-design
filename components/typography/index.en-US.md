@@ -27,10 +27,10 @@ Basic text writing, including headings, body text, lists, and more.
 | ellipsis | Display ellipsis when text overflows | boolean | false |  |
 | keyboard | Keyboard style | boolean | false | 4.3.0 |
 | mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
 | strong | Bold style | boolean | false |  |
 | type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | Underlined style | boolean | false |  |
+| onChange | Trigger when user edits the content | function(string) | - |  |
 
 ### Typography.Title
 
@@ -44,9 +44,29 @@ Basic text writing, including headings, body text, lists, and more.
 | ellipsis | Display ellipsis when text overflows, can configure rows and expandable by using object | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
 | level | Set content importance. Match with `h1`, `h2`, `h3`, `h4`, `h5` | number: 1, 2, 3, 4, 5 | 1 | 5: 4.6.0 |
 | mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
 | type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | Underlined style | boolean | false |  |
+| onChange | Trigger when user edits the content | function(string) | - |  |
+
+### Typography.Link
+
+| Property | Description | Type | Default | Version |
+| --- | --- | --- | --- | --- |
+| code | Code style | boolean | false |  |
+| copyable | Whether to be copyable, customize it via setting an object | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
+| delete | Deleted line style | boolean | false |  |
+| disabled | Disabled content | boolean | false |  |
+| editable | If editable. Can control edit state when is object | boolean \| [editable](#editable) | false | [editable](#editable) |
+| ellipsis | Display ellipsis when text overflows, can configure rows and expandable by using object | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
+| level | Set content importance. Match with `h1`, `h2`, `h3`, `h4`, `h5` | number: 1, 2, 3, 4, 5 | 1 | 5: 4.6.0 |
+| mark | Marked style | boolean | false |  |
+| type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
+| underline | Underlined style | boolean | false |  |
+| onChange | Trigger when user edits the content | function(string) | - |  |
+| href | href | string | | |
+| target | target | string | | |
+
+
 
 ### Typography.Paragraph
 
@@ -59,10 +79,10 @@ Basic text writing, including headings, body text, lists, and more.
 | editable | If editable. Can control edit state when is object | boolean \| [editable](#editable) | false | [editable](#editable) |
 | ellipsis | Display ellipsis when text overflows, can configure rows and expandable by using object | boolean \| [ellipsis](#ellipsis) | false | [ellipsis](#ellipsis) |
 | mark | Marked style | boolean | false |  |
-| onClick | Set the handler to handle click event | (event) => void | - |  |
 | strong | Bold style | boolean | false |  |
 | type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | Underlined style | boolean | false |  |
+| onChange | Trigger when user edits the content | function(string) | - |  |
 
 ### copyable
 
@@ -90,8 +110,6 @@ Basic text writing, including headings, body text, lists, and more.
       autoSize: boolean | { minRows: number, maxRows: number },
       onStart: function,
       onChange: function(string),
-      onCancel: function,
-      onEnd: function,
     }
 
 | Property | Description | Type | Default | Version |
@@ -101,12 +119,8 @@ Basic text writing, including headings, body text, lists, and more.
 | icon | Custom editable icon | ReactNode | &lt;EditOutlined /> | 4.6.0 |
 | maxLength | `maxLength` attribute of textarea | number | - | 4.4.0 |
 | tooltip | Custom tooltip text, hide when it is false | boolean \| ReactNode | `Edit` | 4.6.0 |
-| onCancel | Called when type ESC to exit editable state | function | - |  |
 | onChange | Called when input at textarea | function(event) | - |  |
-| onEnd | Called when type ENTER to exit editable state | function | - | 4.14.0 |
 | onStart | Called when enter editable state | function | - |  |
-| onCancel | Called when type ESC to exit editable state | function | - |  |
-| onEnd | Called when type ENTER to exit editable state | function | - |  |
 
 ### ellipsis
 
