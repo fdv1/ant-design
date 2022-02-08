@@ -9,7 +9,7 @@ Avatars can be used to represent people or objects. It supports images, `Icon`s,
 
 ## API
 
-### Avatar
+## Avatar
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ Avatars can be used to represent people or objects. It supports images, `Icon`s,
 
 > Tip: You can set `icon` or `children` as the fallback for image load error, with the priority of `icon` > `children`
 
-### Avatar.Group
+## Avatar.Group
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

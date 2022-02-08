@@ -36,7 +36,7 @@ If the Ant Design grid layout component does not meet your needs, you can use th
 - [react-flexbox-grid](http://roylee0704.github.io/react-flexbox-grid/)
 - [react-blocks](https://github.com/whoisandy/react-blocks/)
 
-### Row
+## Row
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ If the Ant Design grid layout component does not meet your needs, you can use th
 | justify | Horizontal arrangement | `start` \| `end` \| `center` \| `space-around` \| `space-between` | `start` |  |
 | wrap | Auto wrap line | boolean | true | 4.8.0 |
 
-### Col
+## Col
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

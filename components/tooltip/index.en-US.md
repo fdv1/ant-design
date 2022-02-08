@@ -18,7 +18,7 @@ A simple text popup tip.
 | --- | --- | --- | --- |
 | title | The text shown in the tooltip | ReactNode \| () => ReactNode | - |
 
-### Common API
+## Common API
 
 The following APIs are shared by Tooltip, Popconfirm, Popover.
 

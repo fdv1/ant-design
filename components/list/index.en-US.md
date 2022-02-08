@@ -14,7 +14,7 @@ A list can be used to display content related to a single subject. The content c
 
 ## API
 
-### List
+## List
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -56,14 +56,14 @@ More about pagination, please check [`Pagination`](/components/pagination/).
 | xl | `≥1200px` column of grid | number | - |  |
 | xxl | `≥1600px` column of grid | number | - |  |
 
-### List.Item
+## List.Item
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
 | actions | The actions content of list item. If `itemLayout` is `vertical`, shows the content on bottom, otherwise shows content on the far right | Array&lt;ReactNode> | - |  |
 | extra | The extra content of list item. If `itemLayout` is `vertical`, shows the content on right, otherwise shows content on the far right | ReactNode | - |  |
 
-### List.Item.Meta
+## List.Item.Meta
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

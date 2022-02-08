@@ -14,7 +14,7 @@ For displaying anchor hyperlinks on page and jumping between them.
 
 ## API
 
-### Anchor Props
+## Anchor Props
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ For displaying anchor hyperlinks on page and jumping between them.
 | onChange | Listening for anchor link change | (currentActiveLink: string) => void |  |  |
 | onClick | Set the handler to handle `click` event | function(e: Event, link: Object) | - |  |
 
-### Anchor.Link Props
+## Anchor.Link Props
 
 | Property | Description                               | Type      | Default | Version |
 | -------- | ----------------------------------------- | --------- | ------- | ------- |

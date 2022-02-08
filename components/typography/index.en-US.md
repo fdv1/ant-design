@@ -15,7 +15,7 @@ Basic text writing, including headings, body text, lists, and more.
 
 ## API
 
-### Typography.Text
+## Typography.Text
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -32,7 +32,7 @@ Basic text writing, including headings, body text, lists, and more.
 | underline | Underlined style | boolean | false |  |
 | onChange | Trigger when user edits the content | function(string) | - |  |
 
-### Typography.Title
+## Typography.Title
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ Basic text writing, including headings, body text, lists, and more.
 | underline | Underlined style | boolean | false |  |
 | onChange | Trigger when user edits the content | function(string) | - |  |
 
-### Typography.Link
+## Typography.Link
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -63,12 +63,13 @@ Basic text writing, including headings, body text, lists, and more.
 | type | Content type | `secondary` \| `success` \| `warning` \| `danger` | - | success: 4.6.0 |
 | underline | Underlined style | boolean | false |  |
 | onChange | Trigger when user edits the content | function(string) | - |  |
+| onClick | Trigger when user click the content | function(string) | - |  |
 | href | href | string | | |
 | target | target | string | | |
 
 
 
-### Typography.Paragraph
+## Typography.Paragraph
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

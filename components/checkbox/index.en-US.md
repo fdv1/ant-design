@@ -15,7 +15,7 @@ Checkbox component.
 ## API
 
 
-### Checkbox
+## Checkbox
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ Checkbox component.
 | indeterminate | The indeterminate checked state of checkbox | boolean | false |  |
 | onChange | The callback function that is triggered when the state changes | function(e:Event) | - |  |
 
-### Checkbox.Group
+## Checkbox.Group
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

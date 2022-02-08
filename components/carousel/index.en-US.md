@@ -22,6 +22,7 @@ A carousel component. Scales with its container.
 | dots | Whether to show the dots at the bottom of the gallery, `object` for `dotsClass` and any others | boolean \| { className?: string } | true |  |
 | easing | Transition interpolation function name | string | `linear` |  |
 | effect | Transition effect | `scrollx` \| `fade` | `scrollx` |  |
+| autoplaySpeed | Whether to scroll automatically | number | 5 |  |
 | afterChange | Callback function called after the current index changes | function(current) | - |  |
 | beforeChange | Callback function called before the current index changes | function(from, to) | - |  |
 

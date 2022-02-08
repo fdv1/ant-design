@@ -17,7 +17,7 @@ Provide a placeholder while you wait for content to load, or to visualise conten
 
 ## API
 
-### Skeleton
+## Skeleton
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ Provide a placeholder while you wait for content to load, or to visualise conten
 | round | Show paragraph and title radius when true | boolean | false |
 | title | Show title placeholder | boolean \| [SkeletonTitleProps](#SkeletonTitleProps) | true |
 
-### SkeletonAvatarProps
+## SkeletonAvatarProps
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -36,20 +36,20 @@ Provide a placeholder while you wait for content to load, or to visualise conten
 | shape | Set the shape of avatar | `circle` \| `square` | - |
 | size | Set the size of avatar | number \| `large` \| `small` \| `default` | - |
 
-### SkeletonTitleProps
+## SkeletonTitleProps
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
 | width | Set the width of title | number \| string | - |
 
-### SkeletonParagraphProps
+## SkeletonParagraphProps
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
 | rows | Set the row count of paragraph | number | - |
 | width | Set the width of paragraph. When width is an Array, it can set the width of each row. Otherwise only set the last row width | number \| string \| Array&lt;number \| string> | - |
 
-### SkeletonButtonProps
+## SkeletonButtonProps
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ Provide a placeholder while you wait for content to load, or to visualise conten
 | shape | Set the shape of button | `circle` \| `round` \| `default` | - |
 | size | Set the size of button | `large` \| `small` \| `default` | - |
 
-### SkeletonInputProps
+## SkeletonInputProps
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

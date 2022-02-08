@@ -18,7 +18,7 @@ A card can be used to display content related to a single subject. The content c
 <Card title="Card title">Card content</Card>
 ```
 
-### Card
+## Card
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ A card can be used to display content related to a single subject. The content c
 | type | Card style type, can be set to `inner` or not set | string | - |  |
 | onTabChange | Callback when tab is switched | (key) => void | - |  |
 
-### Card.Grid
+## Card.Grid
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ A card can be used to display content related to a single subject. The content c
 | hoverable | Lift up when hovering card grid | boolean | true |  |
 | style | The style object of container | CSSProperties | - |  |
 
-### Card.Meta
+## Card.Meta
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

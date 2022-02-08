@@ -22,7 +22,7 @@ When a given task is complicated or has a certain sequence in the series of subt
 </Steps>
 ```
 
-### Steps
+## Steps
 
 The whole of the step bar.
 
@@ -41,7 +41,7 @@ The whole of the step bar.
 | type | Type of steps, can be set to one of the following values: `default`, `navigation` | string | `default` |  |
 | onChange | Trigger when Step is changed | (current) => void | - |  |
 
-### Steps.Step
+## Steps.Step
 
 A single step in the step bar.
 

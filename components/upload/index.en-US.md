@@ -47,7 +47,7 @@ Uploading is the process of publishing information (web pages, text, pictures, v
 | onPreview | A callback function, will be executed when file link or preview icon is clicked | function(file) | - |  |
 | onRemove | A callback function, will be executed when removing file button is clicked, remove event will be prevented when return value is false or a Promise which resolve(false) or reject | function(file): boolean \| Promise | - |  |
 
-### UploadFile
+## UploadFile
 
 Extends File with additional props.
 

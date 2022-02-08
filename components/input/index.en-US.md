@@ -14,7 +14,7 @@ A basic widget for getting the user input is a text field. Keyboard and mouse ca
 
 ## API
 
-### Input
+## Input
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -39,7 +39,7 @@ A basic widget for getting the user input is a text field. Keyboard and mouse ca
 
 The rest of the props of Input are exactly the same as the original [input](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes).
 
-### Input.TextArea
+## Input.TextArea
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -58,7 +58,7 @@ The rest of the props of Input are exactly the same as the original [input](http
 
 The rest of the props of `Input.TextArea` are the same as the original [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea).
 
-### Input.Search
+## Input.Search
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ The rest of the props of `Input.TextArea` are the same as the original [textarea
 | size | Set the size | `large` \| `middle` \| `small` | `middle` |  |
 | allowClear | Allow clearing text search | boolean | true |  |
 
-### Input.Group
+## Input.Group
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -84,7 +84,7 @@ The rest of the props of `Input.TextArea` are the same as the original [textarea
 </Input.Group>
 ```
 
-### Input.Password
+## Input.Password
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

@@ -15,7 +15,7 @@ Tag for categorizing or markup.
 
 ## API
 
-### Tag
+## Tag
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ Tag for categorizing or markup.
 | visible | Whether the Tag is closed or not | boolean | true |  |
 | onClose | Callback executed when tag is closed | (e) => void | - |  |
 
-### Tag.CheckableTag
+## Tag.CheckableTag
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

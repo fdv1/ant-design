@@ -15,7 +15,7 @@ A table displays rows of data.
 
 ## API
 
-### Table
+## Table
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -68,7 +68,7 @@ Same as `onRow` `onHeaderRow` `onCell` `onHeaderCell`
 />
 ```
 
-### Column
+## Column
 
 One of the Table `columns` prop for describing the table's columns, Column has the same API.
 
@@ -104,13 +104,13 @@ One of the Table `columns` prop for describing the table's columns, Column has t
 | onFilterDropdownVisibleChange | Callback executed when `filterDropdownVisible` is changed | function(visible) {} | - |  |  |
 | onHeaderCell | Set props on per header cell | function(column) | - |  |  |
 
-### ColumnGroup
+## ColumnGroup
 
 | Property | Description               | Type      | Default |
 | -------- | ------------------------- | --------- | ------- |
 | title    | Title of the column group | ReactNode | -       |
 
-### pagination
+## pagination
 
 Properties for pagination.
 

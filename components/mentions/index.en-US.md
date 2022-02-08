@@ -19,7 +19,7 @@ When need to mention someone or something.
 </Mentions>
 ```
 
-### Mentions
+## Mentions
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -50,7 +50,7 @@ When need to mention someone or something.
 | blur()  | Remove focus |
 | focus() | Get focus    |
 
-### Option
+## Mentions.Option
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

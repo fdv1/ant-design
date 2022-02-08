@@ -20,7 +20,7 @@ Select component to select value from options.
 </Select>
 ```
 
-### Select props
+## Select props
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -86,7 +86,7 @@ Select component to select value from options.
 | blur()  | Remove focus |         |
 | focus() | Get focus    |         |
 
-### Select.Option props
+## Select.Option props
 
 | Property  | Description                                | Type             | Default | Version |
 | --------- | ------------------------------------------ | ---------------- | ------- | ------- |
@@ -96,7 +96,7 @@ Select component to select value from options.
 | value     | Default to filter with this property       | string \| number | -       |         |
 | label    | Group label | string \| React.Element | -       |         |
 
-### Select.OptGroup props
+## Select.OptGroup props
 
 | Property | Description | Type                    | Default | Version |
 | -------- | ----------- | ----------------------- | ------- | ------- |

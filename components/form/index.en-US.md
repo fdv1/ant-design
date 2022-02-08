@@ -15,7 +15,7 @@ High performance Form component with data scope management. Including data colle
 
 ## API
 
-### Form
+## Form
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ High performance Form component with data scope management. Including data colle
 | onFinishFailed | Trigger after submitting the form and verifying data failed | function({ values, errorFields, outOfDate }) | - |  |
 | onValuesChange | Trigger when value updated | function(changedValues, allValues) | - |  |
 
-### Form.Item
+## Form.Item
 
 Form field component for data bidirectional binding, validation, layout, and so on.
 
@@ -136,7 +136,7 @@ You can modify the default verification information of Form.Item through `messag
 </Form>
 ```
 
-### Form.List
+## Form.List
 
 Provides array management for fields.
 
@@ -173,7 +173,7 @@ Some operator functions in render form of Form.List.
 | move | move form item | (from: number, to: number) => void | - |
 | remove | remove form item | (index: number \| number\[]) => void | number\[]: 4.5.0 |
 
-### Form.ErrorList
+## Form.ErrorList
 
 New in 4.7.0. Show error messages, should only work with `rules` of Form.List. See [example](#components-form-demo-dynamic-form-item).
 

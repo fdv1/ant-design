@@ -14,7 +14,7 @@ Display statistic number.
 
 ## API
 
-### Statistic
+## Statistic
 
 | Property         | Description                   | Type                 | Default | Version |
 | ---------------- | ----------------------------- | -------------------- | ------- | ------- |
@@ -29,7 +29,7 @@ Display statistic number.
 | value            | Display value                 | string \| number     | -       |         |
 | valueStyle       | Set value css style           | CSSProperties        | -       |         |
 
-### Statistic.Countdown
+## Statistic.Countdown
 
 | Property   | Description                              | Type             | Default    | Version |
 | ---------- | ---------------------------------------- | ---------------- | ---------- | ------- |

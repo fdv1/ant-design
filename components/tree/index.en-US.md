@@ -13,7 +13,7 @@ Almost anything can be represented in a tree structure. Examples include directo
 
 ## API
 
-### Tree props
+## Tree props
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -57,7 +57,7 @@ Almost anything can be represented in a tree structure. Examples include directo
 | onRightClick | Callback function for when the user right clicks a treeNode | function({event, node}) | - |  |
 | onSelect | Callback function for when the user clicks a treeNode | function(selectedKeys, e:{selected: bool, selectedNodes, node, event}) | - |  |
 
-### TreeNode props
+## TreeNode props
 
 | Property | Description | Type | Default |  |
 | --- | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ Almost anything can be represented in a tree structure. Examples include directo
 | selectable | Set whether the treeNode can be selected | boolean | true |  |
 | title | Title | ReactNode | `---` |  |
 
-### DirectoryTree props
+## DirectoryTree props
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -98,7 +98,7 @@ Before `3.4.0`: The number of treeNodes can be very large, but when `checkable=t
 
 | Name | Description |
 | --- | --- |
-| scrollTo({ key: string \| number; align?: 'top' \| 'bottom' \| 'auto'; offset?: number }) | Scroll to key item in virtual scroll |
+| scrollTo  |({ key: string \| number; align?: 'top' \| 'bottom' \| 'auto'; offset?: number }) | Scroll to key item in virtual scroll |
 
 ## FAQ
 

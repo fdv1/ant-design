@@ -53,7 +53,7 @@ import locale from 'antd/lib/locale/zh_CN';
 | blur()  | Remove focus |         |
 | focus() | Get focus    |         |
 
-### DatePicker
+## DatePicker
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -92,8 +92,6 @@ import locale from 'antd/lib/locale/zh_CN';
 | onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
 | onOk | Callback when click ok button | function() | - |  |
 | onPanelChange | Callback function for panel changing | function(value, mode) | - |  |
-| Property | Description | Type | Default | Version |
-| --- | --- | --- | --- | --- |
 | defaultPickerValue | To set default picker date | [moment](http://momentjs.com/) | - |  |
 | defaultValue | To set default date | [moment](http://momentjs.com/) | - |  |
 | format | To set the date format, refer to [moment.js](http://momentjs.com/) | string | `YYYY` |  |
@@ -102,7 +100,7 @@ import locale from 'antd/lib/locale/zh_CN';
 | onChange | Callback function, can be executed when the selected time is changing | function(date: moment, dateString: string) | - |  |
 
 
-### RangePicker
+## RangePicker
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

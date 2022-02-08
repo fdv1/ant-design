@@ -61,7 +61,7 @@ Tree selection control.
 | onTreeExpand | A callback function, can be executed when treeNode expanded | function(expandedKeys) | - |  |
 
 
-### TreeSelect.TreeNode
+## TreeSelect.TreeNode
 
 > We recommend you to use `treeData` rather than `TreeNode`, to avoid the trouble of manual construction.
 

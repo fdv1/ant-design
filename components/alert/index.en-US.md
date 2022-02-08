@@ -28,7 +28,7 @@ Alert component for feedback.
 | type | Type of Alert styles, options: `success`, `info`, `warning`, `error` | string | `info`, in `banner` mode default is `warning` |  |
 | onClose | Callback when Alert is closed | (e: MouseEvent) => void | - |  |
 
-### Alert.ErrorBoundary
+## Alert.ErrorBoundary
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

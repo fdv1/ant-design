@@ -25,7 +25,7 @@ More layouts with navigation: [Layout](/components/layout).
 </Menu>
 ```
 
-### Menu
+## Menu
 
 | Param | Description | Type | Default value | Version |
 | --- | --- | --- | --- | --- |
@@ -53,13 +53,14 @@ More layouts with navigation: [Layout](/components/layout).
 
 > More options in [rc-menu](https://github.com/react-component/menu#api)
 
-### Menu.Item
+## Menu.Item
 
 | Param    | Description                          | Type      | Default value | Version |
 | -------- | ------------------------------------ | --------- | ------------- | ------- |
 | danger   | Display the danger style             | boolean   | false         | 4.3.0   |
 | disabled | Whether menu item is disabled        | boolean   | false         |         |
 | icon     | The icon of the menu item            | ReactNode | -             | 4.2.0   |
+| onClick | Called when a menu item is clicked | function({ item, key, keyPath, domEvent }) | - |  |
 | key      | Unique ID of the menu item           | string    | -             |         |
 | title    | Set display title for collapsed item | string    | -             |         |
 
@@ -82,7 +83,7 @@ More layouts with navigation: [Layout](/components/layout).
 > </Menu.SubMenu>
 > ```
 
-### Menu.SubMenu
+## Menu.SubMenu
 
 | Param | Description | Type | Default value | Version |
 | --- | --- | --- | --- | --- |
@@ -95,16 +96,17 @@ More layouts with navigation: [Layout](/components/layout).
 | title | Title of sub menu | ReactNode | - |  |
 | onTitleClick | Callback executed when the sub-menu title is clicked | function({ key, domEvent }) | - |  |
 
-### Menu.ItemGroup
+## Menu.ItemGroup
 
 | Param    | Description            | Type        | Default value | Version |
 | -------- | ---------------------- | ----------- | ------------- | ------- |
 | children | Sub-menu items         | MenuItem\[] | -             |         |
 | title    | The title of the group | ReactNode   | -             |         |
 
-### Menu.Divider
+## Menu.Divider
 
 Divider line in between menu items, only used in vertical popup Menu or Dropdown Menu.
+
 | Param    | Description            | Type        | Default value | Version |
 | -------- | ---------------------- | ----------- | ------------- | ------- |
 | children | items                  | [MenuItem]  | -             |         |

@@ -10,7 +10,7 @@ Dummy description
 ## When to use
 Dummy text
 ## API
-### Icon
+## Icon
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -20,3 +20,4 @@ Dummy text
 | component | SVG image | ReactNode | null |  |
 | style | The style properties of icon, like `fontSize` and `color` | CSSProperties | - |  |
 | twoToneColor | Only supports the two-tone icon. Specify the primary color | string (hex color) | - |  |
+| onClick | Trigger when user click the content | function(string) | - |  |

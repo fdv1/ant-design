@@ -15,7 +15,7 @@ A content area which can be collapsed and expanded.
 
 ## API
 
-### Collapse
+## Collapse
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ A content area which can be collapsed and expanded.
 | ghost | Make the collapse borderless and its background transparent | boolean | false | 4.4.0 |
 | onChange | Callback function executed when active panel is changed | function | - |  |
 
-### Collapse.Panel
+## Collapse.Panel
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

@@ -18,7 +18,7 @@ Ant Design has 3 types of Tabs for different situations.
 
 ## API
 
-### Tabs
+## Tabs
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -43,7 +43,7 @@ Ant Design has 3 types of Tabs for different situations.
 
 More option at [rc-tabs option](https://github.com/react-component/tabs#tabs)
 
-### Tabs.TabPane
+## Tabs.TabPane
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

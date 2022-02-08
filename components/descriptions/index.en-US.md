@@ -14,7 +14,7 @@ Commonly displayed on the details page.
 
 ## API
 
-### Descriptions
+## Descriptions
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ Commonly displayed on the details page.
 | size | Set the size of the list. Can be set to `middle`,`small`, or not filled | `default` \| `middle` \| `small` | - |  |
 | title | The title of the description list, placed at the top | ReactNode | - |  |
 
-### Descriptions.Item
+## Descriptions.Item
 
 | Property     | Description                    | Type          | Default | Version |
 | ------------ | ------------------------------ | ------------- | ------- | ------- |

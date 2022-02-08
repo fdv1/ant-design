@@ -70,7 +70,7 @@ Style of a navigation should conform to its level.
 </Layout>
 ```
 
-### Layout
+## Layout
 
 The wrapper.
 
@@ -82,7 +82,7 @@ The wrapper.
 
 > APIs of `Layout.Header` `Layout.Footer` `Layout.Content` are the same as that of `Layout`.
 
-### Layout.Header
+## Layout.Header
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -90,7 +90,7 @@ The wrapper.
 | hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
 | style | To customize the styles | CSSProperties | - |
 
-### Layout.Footer
+## Layout.Footer
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -98,7 +98,7 @@ The wrapper.
 | hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
 | style | To customize the styles | CSSProperties | - |
 
-### Layout.Content
+## Layout.Content
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -106,7 +106,7 @@ The wrapper.
 | hasSider | Whether contain Sider in children, don't have to assign it normally. Useful in ssr avoid style flickering | boolean | - |
 | style | To customize the styles | CSSProperties | - |
 
-### Layout.Sider
+## Layout.Sider
 
 The sidebar.
 

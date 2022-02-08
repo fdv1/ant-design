@@ -14,7 +14,9 @@ Radio.
 
 ## API
 
-### Radio/Radio.Button
+.route("/hello"
+
+## Radio.Button
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -24,7 +26,7 @@ Radio.
 | disabled | Disable radio | boolean | false |
 | value | According to value for comparison, to determine whether the selected | any | - |
 
-### Radio.Group
+## Radio.Group
 
 Radio group can wrap a group of `Radio`。
 

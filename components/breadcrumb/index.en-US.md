@@ -15,7 +15,7 @@ A breadcrumb displays the current location within a hierarchy. It allows going b
 
 ## API
 
-### Breadcrumb
+## Breadcrumb
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -24,7 +24,7 @@ A breadcrumb displays the current location within a hierarchy. It allows going b
 | routes | The routing stack information of router | [routes\[\]](#routes) | - |  |
 | separator | Custom separator | ReactNode | `/` |  |
 
-### Breadcrumb.Item
+## Breadcrumb.Item
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ A breadcrumb displays the current location within a hierarchy. It allows going b
 | overlay | The dropdown menu | [Menu](/components/menu) \| () => Menu | - |  |
 | onClick | Set the handler to handle click event | (e:MouseEvent) => void | - |  |
 
-### Breadcrumb.Separator
+## Breadcrumb.Separator
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

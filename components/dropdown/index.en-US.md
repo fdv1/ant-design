@@ -13,7 +13,7 @@ When there are more than a few options to choose from, you can wrap them in a `D
 
 ## API
 
-### Dropdown
+## Dropdown
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ You should use [Menu](/components/menu/) as `overlay`. The menu items and divide
 >
 > Menu of Dropdown is unselectable by default, you can make it selectable via `<Menu selectable>`.
 
-### Dropdown.Button
+## Dropdown.Button
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |

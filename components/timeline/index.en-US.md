@@ -23,7 +23,7 @@ Vertical display timeline.
 </Timeline>
 ```
 
-### Timeline
+## Timeline
 
 Timeline
 
@@ -34,7 +34,7 @@ Timeline
 | pendingDot | Set the dot of the last ghost node when pending is true | ReactNode | &lt;LoadingOutlined /> |
 | reverse | Whether reverse nodes or not | boolean | false |
 
-### Timeline.Item
+## Timeline.Item
 
 Node of timeline
 
